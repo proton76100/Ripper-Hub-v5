@@ -1,15 +1,15 @@
-local MAPBF = 2753915549 or 4442272183 or 7449423635
-local MAPAV = 16146832113 or 16277809958
-
-if MAPBF then
-    if getgenv().Mobile_Script then
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Zaraknos/RipperHubv5/refs/heads/main/Main%20Mobile.lua"))()
-    elseif getgenv().Mobile_PC then
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Zaraknos/RipperHubv5/refs/heads/main/Main%20PC.lua"))()
-    else
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Zaraknos/RipperHubv5/refs/heads/main/Main%20Mobile.lua"))()
-    end
+if not game:IsLoaded() then
+	game.Loaded:Wait()
 end
-if MAPAV then
-    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/786069eb93e11090cfb325f08f2ea44d.lua"))()
+
+local games = {
+	[2753915549] = 'https://raw.githubusercontent.com/hajibeza/Main/refs/heads/main/RIPPER_V5.lua', -- BF
+	[4442272183] = 'https://raw.githubusercontent.com/hajibeza/Main/refs/heads/main/RIPPER_V5.lua', -- BF
+	[7449423635] = 'https://raw.githubusercontent.com/hajibeza/Main/refs/heads/main/RIPPER_V5.lua', -- BF
+    [16146832113] = 'https://api.luarmor.net/files/v3/loaders/786069eb93e11090cfb325f08f2ea44d.lua', --AV
+    [16277809958] = 'https://api.luarmor.net/files/v3/loaders/786069eb93e11090cfb325f08f2ea44d.lua', --AV
+}	
+
+if game.PlaceId == 2753915549 or 4442272183 or 7449423635 or 16146832113 or 16277809958 then
+	loadstring(game:HttpGet(games[game.PlaceId]))()
 end
