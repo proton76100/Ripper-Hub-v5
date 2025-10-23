@@ -1,0 +1,15 @@
+local MAPBF = 2753915549 or 4442272183 or 7449423635
+local MAPAV = 16146832113 or 16277809958
+
+if MAPBF then
+    if getgenv().Mobile_Script then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Zaraknos/RipperHubv5/refs/heads/main/Main%20Mobile.lua"))()
+    elseif getgenv().Mobile_PC then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Zaraknos/RipperHubv5/refs/heads/main/Main%20PC.lua"))()
+    else
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Zaraknos/RipperHubv5/refs/heads/main/Main%20Mobile.lua"))()
+    end
+end
+if MAPAV then
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/786069eb93e11090cfb325f08f2ea44d.lua"))()
+end
