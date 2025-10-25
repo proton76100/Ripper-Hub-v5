@@ -13,7 +13,7 @@ local games = {
 	[15234596844] = 'https://raw.githubusercontent.com/proton76100/Ripper-Hub-v5/refs/heads/main/Blade%20Ball', -- BB
 }	
 
-if game.PlaceId == 2753915549 or 4442272183 or 7449423635 or 16146832113 or 16277809958 or 15234596844 or 16281300371 or 16044264830 then
+if game.PlaceId == 2753915549 or 4442272183 or 7449423635 then
 	loadstring(game:HttpGet(games[game.PlaceId]))()
 end
 
