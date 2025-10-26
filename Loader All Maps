@@ -1,18 +1,1 @@
-if not game:IsLoaded() then game.Loaded:Wait() end
-
-local games = {
-    [2753915549] = 'https://api.luarmor.net/files/v3/loaders/0781dc3d726b9237850e587b5f543be3.lua',
-    [4442272183] = 'https://api.luarmor.net/files/v3/loaders/0781dc3d726b9237850e587b5f543be3.lua',
-    [7449423635] = 'https://api.luarmor.net/files/v3/loaders/0781dc3d726b9237850e587b5f543be3.lua',
-    [16146832113] = 'https://api.luarmor.net/files/v3/loaders/786069eb93e11090cfb325f08f2ea44d.lua',
-    [16277809958] = 'https://api.luarmor.net/files/v3/loaders/786069eb93e11090cfb325f08f2ea44d.lua',
-    [16044264830] = 'https://raw.githubusercontent.com/proton76100/Ripper-Hub-v5/refs/heads/main/Blade%20Ball',
-    [16281300371] = 'https://raw.githubusercontent.com/proton76100/Ripper-Hub-v5/refs/heads/main/Blade%20Ball',
-    [15234596844] = 'https://raw.githubusercontent.com/proton76100/Ripper-Hub-v5/refs/heads/main/Blade%20Ball',
-}
-
-if games[game.PlaceId] then
-    loadstring(game:HttpGet(games[game.PlaceId]))()
-else
-    warn("⚠️ Game not supported:", game.PlaceId)
-end
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/591e08cd800161aa846cfb7b74382e4a.lua"))()
